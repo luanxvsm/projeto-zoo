@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
-import Animais from "./animais";
-import Home from "./home";
+import Animais from "./animais.jsx";
+import Home from "./home.jsx";
 
 function Navbar() {
   return (
@@ -8,10 +8,10 @@ function Navbar() {
       <nav className="navbar">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" component={Home}>Home</Link>
           </li>
           <li>
-            <Link to="/Animais">Animais</Link>
+            <Link to="Animais" component={Animais}>Animais</Link>
           </li>
         </ul>
       </nav>

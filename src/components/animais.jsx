@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 const Animais = (props) => {
-  const {latin_name, image_link, geo_range, diet, habitat} = props.animaisUnico;
+  const {latin_name, image_link, geo_range, diet, habitat} = props.animais;
   const [animal, setAnimal] = useState("Show animal"); 
-  
+
   useEffect(() => {
     getAnimal();
   }, []);
