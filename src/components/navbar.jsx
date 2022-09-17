@@ -1,4 +1,3 @@
-
 import { Link, Outlet } from "react-router-dom";
 import Animais from "./animais";
 import Home from "./home";

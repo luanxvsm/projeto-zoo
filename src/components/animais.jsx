@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 
 const Animais = (props) => {
-  const {latin_name, image_link, geo_range, diet, habitat} = props.animaisUnico; 
-
-function Animais() {
-  const [animal, setAnimal] = useState("Show animal");
-
+  const {latin_name, image_link, geo_range, diet, habitat} = props.animaisUnico;
+  const [animal, setAnimal] = useState("Show animal"); 
+  
   useEffect(() => {
     getAnimal();
   }, []);
@@ -18,6 +16,7 @@ function Animais() {
     });
     const data = await response.json();
     setAnimal(data.value);
+    setAnimal(data.slice(0,10))
   };
 
   return (
@@ -39,7 +38,7 @@ function Animais() {
         </footer>   
     </div>
   );
-}}
+}
 
 
-export default Animais; 
+export default Animais;

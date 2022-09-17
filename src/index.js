@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AnimaisPage from "./routes/animais.page";
+import AnimaisCardPage from "./routes/animaisCard.page";
 import HomePage from "./routes/home.page";
 import Navbar from "./components/navbar";
 
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/AnimaisPage",
-        element: <AnimaisPage />,
+        path: "/AnimaisCardPage",
+        element: <AnimaisCardPage />,
       },
     ],
   },
