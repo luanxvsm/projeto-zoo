@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra Petch:wght@300;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500&display=swap');
 
 *, ::after, ::before {
     margin: 0;
@@ -9,25 +11,24 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     /*display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;*/
-    background: rgb(30,120,158);
-    background: linear-gradient(81deg, rgba(30,120,158,1) 10%, rgba(44,168,221,1) 30%, rgba(41,171,226,1) 50%, rgba(44,168,221,1) 70%, rgba(30,120,158,1) 90%, rgba(19,65,84,1) 100%);
+    background-color: #89973C;
 }
 
 main{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: ;
+    padding-top: 80px;
 }
 
 .navbar{
     position: fixed;
-    background-color: white;
+    background-color: #E6DFCB;
     width: 100%;
     height: 10vh;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.39);
@@ -47,7 +48,7 @@ li{
 
 .navbar a{
     text-decoration: none;
-    color: #F15A24;
+    color: #6B5726;
 }
 
 img{
@@ -57,30 +58,79 @@ img{
 .container{
   margin: auto;
   width: 350px;
-  background-color: white;
+  background-color: #E6DFCB;
   border-radius: 10px;
 }
 
-.norris{
+.animal{
   margin-top: 2;
   margin-left: 0;
-  color: green;
+  color: #89973C;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
+  font-family: 'Chakra Petch', sans-serif;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #6B5726;
   margin-top: 0;
   margin-left: 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h2{
+  font-family: 'Chakra Petch', sans-serif;
+  color: #6B5726;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.animalp1{
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: contain;
+  border-radius: 40px;
+}
+
+.animalp2{
+  width: 200px;
+  height: 135px;
+  object-fit: contain;
+  border-radius: 50px;
+}
+
+.animalp3{
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+}
+
+.coluna{
+  float: left;
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 p{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: #42371a;
   font-weight: 300;
   margin-left: 10px;
   margin-right: 10px;
+  text-align: center;
 }
 
 footer{
@@ -88,20 +138,20 @@ footer{
   color: white;
   padding: 10px;
   text-align: center;
-  background-color: limegreen;
+  background-color: #89973C;
   font-size: large;
   font-weight: bold;
   border-radius: 5px 5px 10px 10px;
 }
 
 .btn {
-    background-color: #F15A24;
+    background-color: #89973C;
     border: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     border-radius: 5px;
     font-size: 1.2rem;
     padding: 0.8rem 2rem;
-    color: #fff;
+    color: #E6DFCB;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
     cursor: pointer;
 }

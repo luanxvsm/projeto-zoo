@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Animais = (props) => {
-  const { id, name, latin_name, image_link, geo_range, diet, habitat} = props.animaisUnico; 
+  const {latin_name, image_link, geo_range, diet, habitat} = props.animaisUnico; 
 
 function Animais() {
   const [animal, setAnimal] = useState("Show animal");
@@ -18,17 +18,19 @@ function Animais() {
     });
     const data = await response.json();
     setAnimal(data.value);
-    console.log(data)
   };
 
   return (
     <div className="container">
         <header>
-            <img src={image_link} alt="{name}" width="350" />
+            <img src={image_link} alt="{animal}" width="350" />
         </header>
         <main>
-            <h1>{name}</h1>
+            <h1>{animal}</h1>
             <p className="animal">{latin_name}</p>
+            <h3>Habitat: {habitat}</h3>
+            <h3>Localização: {geo_range}</h3>
+            <h3>Diet: {diet}</h3>
         </main>
         <footer>
             <button type="button" className="btn" onClick={getAnimal}>
@@ -40,4 +42,4 @@ function Animais() {
 }}
 
 
-export default Animais;
+export default Animais; 

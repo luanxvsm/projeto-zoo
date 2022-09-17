@@ -1,7 +1,7 @@
 
 import { Link, Outlet } from "react-router-dom";
-import Animais from "./home";
-import Home from "./animais";
+import Animais from "./animais";
+import Home from "./home";
 
 function Navbar() {
   return (
@@ -12,7 +12,7 @@ function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/dadJoke">Animais</Link>
+            <Link to="/Animais">Animais</Link>
           </li>
         </ul>
       </nav>
