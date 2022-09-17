@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AnimaisCardPage from "./routes/animaisCard.page";
 import HomePage from "./routes/home.page";
+import Animais from "../src/components/animais.jsx";
 import Navbar from "./components/navbar";
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/AnimaisCardPage",
         element: <AnimaisCardPage />,
+      },
+      {
+        path: "/Animais",
+        element: <Animais />,
       },
     ],
   },
