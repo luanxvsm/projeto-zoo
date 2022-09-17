@@ -26,9 +26,11 @@ const Animais = (props) => {
             <p className="Habitat"><strong>Habitat:</strong> {animal.habitat}</p>
             <p className="Local"><strong>Localization:</strong> {animal.geo_range}</p>
             <p className="Dieta"><strong>Diet:</strong> {animal.diet}</p>
-            <button type="button" className="btn" onClick={getAnimal}>
-                Get Another Animal
-            </button>
+            <footer>
+              <button type="button" className="btn" onClick={getAnimal}>
+                  Get Another Animal
+              </button>
+            </footer>
     </div>
   );
 }
